@@ -85,9 +85,11 @@ function quizStart() {
         options[3].value = que[q].o4;
     }
     else{
+        var per = ((score/total)*100);
+        per = Math.round(per);
         document.getElementById("que-sec").classList.add('d-none');
         document.getElementById("score").classList.remove('d-none');
-        document.getElementById('result').innerText = "Your percentage is " + ((score/total)*100) + "% \n You score is "+score+"/"+total ;
+        document.getElementById('result').innerText = "Your percentage is " + per + "% \n Your score is "+score+"/"+total ;
     }
     var wid = ((q) / total) * 100;
     document.getElementById('progress').style.width = wid + '%';
