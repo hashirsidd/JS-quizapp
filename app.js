@@ -67,13 +67,6 @@ var que = [{
     o3: "UAE",
     o4: "KSA",
     a: "Oman",
-}, {
-    question: "Urdu was made national language of Pakistan in the constitution of",
-    o1: "1952",
-    o2: "1956",
-    o3: "1962",
-    o4: "1973",
-    a: "1973",
 }];
 
 var total = que.length;
