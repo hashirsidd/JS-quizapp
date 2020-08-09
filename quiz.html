@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+
+<body onload="quizStart()">
+    <div class="container text-center main">
+        <img  src="img/2.png" width="200px" alt=""> <br>
+        <div class="quiz-div p-5 text-left">
+            <div id="que-sec" class="">
+                <h2 id="q-num">Question 1</h2>
+                <p id="question">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam natus laboriosam ex, cupiditate
+                    illo dolor cum labore delectus, suscipit nobis repellat repudiandae reprehenderit veniam
+                    perferendis, consequuntur soluta debitis neque vero!
+                </p>
+                <input type="radio" value="1" name="ans"> <label  id="ans1">ABC</label> <br>
+                <input type="radio" value="1" name="ans"> <label id="ans2">DEF</label> <br>
+                <input type="radio" value="1" name="ans"> <label id="ans3">GHI</label> <br>
+                <input type="radio" value="1" name="ans"> <label id="ans4">JKL</label> <br>
+                <button onclick="check()" class="sub">Submit</button>
+            </div>
+            
+            <div id="score" class="mb-5 text-center d-none">
+                <h1>
+                    THANK YOU FOR COMPLETEING QUIZ
+                </h1>
+                <h2 id="result"></h2>
+            </div>
+            <div class="progress mt-3">
+                <div class="progress-bar" role="progressbar" id="progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
