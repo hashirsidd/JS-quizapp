@@ -60,6 +60,20 @@ var que = [{
     o3: "Karakoram",
     o4: "Sulaiman",
     a: "Karakoram",
+}, {
+    question: "The only country with which Pakistan shares a maritime border (and not the land border) is",
+    o1: "Iran",
+    o2: "Oman",
+    o3: "UAE",
+    o4: "KSA",
+    a: "Oman",
+}, {
+    question: "Urdu was made national language of Pakistan in the constitution of",
+    o1: "1952",
+    o2: "1956",
+    o3: "1962",
+    o4: "1973",
+    a: "1973",
 }];
 
 var total = que.length;
@@ -80,11 +94,10 @@ function quizStart() {
     else{
         document.getElementById("que-sec").classList.add('d-none');
         document.getElementById("score").classList.remove('d-none');
-        document.getElementById('result').innerText = "Your score is " + ((score/total)*100) + "%";
+        document.getElementById('result').innerText = "Your percentage is " + ((score/total)*100) + "% \n You score is "+score+"/"+total ;
     }
     var wid = ((q) / total) * 100;
     document.getElementById('progress').style.width = wid + '%';
-
 }
 
 function check() {
@@ -97,7 +110,6 @@ function check() {
     }
     if (que[q].a == ans) {
         score++;
-        console.log(score)
     }
     q++;
     quizStart();
